@@ -1,17 +1,19 @@
-* {
-    justify-content: space-around;
 
-}
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 50px;
-    width: 80%
-
-}
 .create {
-    display: flex;
+    width: 40%;
+    display: block;
+    margin-left: 100px;
+    margin-top: 250px;
+    grid-column: 1;
+}
+.createImage {
+    width: 40%;
+    margin-left: 50%;
+    margin-top: -400px;
+    grid-column: 2;
+}
+.createHeading {
+    display: block;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
@@ -19,22 +21,41 @@ body {
     margin-left: 100px;
     
 }
-.invite {
-    display: flex;
+.createDiv  {
+    display: inline;
+    border: 1px solid red;
+    background-color: green;
+}
+.inviteDiv {
+    display: inline;
     align-items: center;
     justify-content: center;
-
-    margin-top: 100px;
-    
-    
+    flex-direction: row;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin-top: 100px;    
+}
+.invite {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 50px;
+    margin-top: 100px;    
+}
+.inviteIllustration {
+    margin-right: 50px;
+    grid-column-start: 1; 
+}
+.inviteText {
+    margin-left: 30px;
+    grid-column-start: 2; 
 }
 .pricing {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
-
-
+    margin-top: 100px;
 }
 .sub {
     display: flex;
@@ -44,50 +65,308 @@ body {
 
 
 }
-/* @media screen and (min-width: 576px) {
-    body { width: 100%};
-  } */
-  
-  .download {
+.download {
     position: relative;
     margin-top: 70px;
     margin-left: 220px;
     width: 90%;
 
 
-  }
-  .footer {
+}
+.footer {
       position: relative;
       margin-top: 60px;
-
-  }
-  .feature {
+}
+.feature {
     margin-left: 145px;
     width: 93%;
     margin-top: 60px;
-  }
-  .banner {
+}
+.banner {
     margin-left: 300px;
 }
 .account {
    
     margin-top: 40px;
 }
-.header {
-    margin-bottom: 70px;
-    margin-left: 400px;
-
+.NavBar {
+      display: inline-flex;
+      margin-top: 20px;
 }
-
-image {
+  .sitting {
+      display: block;
+  }
+  .grid-containerNav {
+    display: inline-grid;
+    flex-direction: row;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+  }
+  .grid-item-1 {
+      display: inline-grid;
+      flex-direction: row;
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      
+      
+  }
+  .boxes {
+    display: inline-grid;
+    flex-direction: row;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
     
-    height: auto;
-    max-width: 100%;
-    
-}
-@media only screen and (min-width: 400px) {
-    image {
-      width: 50%;
-    }
+    margin-top: 100px
+  }
+  .grid-item-2 {
+    margin-bottom: 50px;
   }
 
+  #headerFind {
+    grid-column-start: 2;
+    margin-left: -130px;
+    
+      
+  }
+  #headerBar {
+    grid-column-start: 3;
+    margin-right: -100px;
+      
+    
+  }
+  #headerStart {
+    grid-column-start: 4;
+    margin-left: -33%;
+       
+  }
+  #headerLogo {
+    grid-column-start: 1;
+    margin-left: 33%;
+
+  }
+  #box1 {
+      margin-top: 170px;
+  }
+  #box3 {
+      margin-top: 250px;
+  }
+  #box4 {
+      margin-top: 100px;
+  }
+  #box5 {
+      margin-top: 20px;
+  }
+  #box6 {
+      margin-top: 166px;
+  }
+  #box7 {
+      margin-top: 115px;
+  }
+  #box8 {
+    margin-top: 166px;
+  }
+  #box9 {
+    margin-top: 20px;
+  }
+  #box10 {
+    margin-top: 115px;
+  }
+  #box11 {
+    margin-top: 15px;
+  }
+  #box12 {
+    margin-top: 170px;
+  }
+  #box13 {
+    margin-top: 100px;
+  }
+  #box14 {
+    margin-top: 10px;
+  }
+.sitting {
+    
+    display: inline-grid;
+    flex-direction: row;
+    grid-template-columns: auto auto auto;
+    
+    
+}
+#yellowShirt {
+    
+    grid-row: 1;
+    margin-left: 70%;
+    
+}
+#orangeShirt {
+    
+    grid-row: 2;
+    grid-column: 1;
+    margin-left: 22%;
+}
+#greenShirt {
+    
+    grid-row: 2;
+    grid-column: 3;
+    
+    margin-top: 40px;
+}
+
+#tealShirt {
+    
+    grid-row: 3;
+    margin-left: auto;
+    margin-top: -70px;  
+}
+#topLine {
+    grid-row: 4;
+    padding: 5px;
+    justify-content: center;
+    margin-left: 25%;
+}
+#bottomStart {  
+    grid-row: 5;
+    padding: 5px;
+    margin-left: 30%;
+    margin-right: -50px;
+}
+#bottomLine {
+    grid-row: 5;
+    padding: 5px;
+    margin-left: -600px;
+}
+#bottomEnd {   
+    grid-row: 5;
+    padding: 5px;
+    margin-left: 0;
+}
+.features {    
+    display: inline-grid;
+    flex-direction: row;
+    grid-template-columns: auto auto auto auto;
+    padding: 50px 10px;   
+    width: 80%;
+}
+#core {
+    display: inline-grid;
+    flex-direction: row;
+    grid-template-columns: auto auto auto auto;
+    background-color: #EFF8FF;
+    width: 100%;
+    margin-top: 100px;   
+}
+
+#flag {
+    margin-top: -76px;
+    grid-column: 1;    
+}
+
+#message {
+    grid-column: 2;
+    padding: 15px;
+    padding-left: 150px;
+}
+
+#file {
+    padding: 15px;
+    grid-column: 4;
+    padding-right: 150px;
+}
+
+#voice {
+    grid-column: 3;
+    padding: 15px
+}
+.pricingHeader {
+    display: block;
+    margin-left: 250px;
+    width: 50%;
+      
+}
+#priceHeader {
+    align-items: auto;
+    justify-content: center;
+    margin-left: 225px;
+    
+}
+.pricingImages {
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    grid-template-columns: auto auto;
+    column-gap: 25px;
+    width: 80%;
+    margin-top: 50px;
+}
+
+#photo1 {
+    display: inline;
+    grid-column: 1;
+    margin-left: 150px;
+}
+
+#photo2 {
+    
+    grid-column: 2;
+}
+.download {
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    grid-template-columns: auto auto;
+    column-gap: 25px;
+    width: 100%;
+    margin-top: 50px;
+    background-color: #EFF8FF;
+    margin-left: 0;
+    
+}
+
+.downloadBlurb {
+    grid-column: 1;
+}
+
+.downloadImage {
+    grid-column: 2;
+}
+.sub {
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    grid-template-columns: auto auto;
+    column-gap: 25px;
+    width: 100%;
+    margin-top: 50px;
+
+}
+
+.subBlurb {
+    grid-column: 1;
+    width: 30%;
+}
+.subButton {
+    grid-column: 2;
+    width: 30%;
+    
+}
+.footer {
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    grid-template-columns: auto auto auto auto auto auto;
+    column-gap: 25px;
+    width: 100%;
+    margin-top: 50px;
+
+}
+.footerSocial {
+    margin-top: -200px;
+}
+@media (max-width: 700px) {
+    body * .grid-containerNav .footer .sitting .create .createImage .inviteIllustration .inviteText #headerFind #headerBar #headerStart #headerLogo #orangeShirt #greenShirt #tealShirt #flag #message #file #voice #photo1 #photo2 .downloadBlurb .downloadImage .subBlurb .subButton{   
+      flex-direction: column;
+      display: block;
+      width: 50%;
+}
+}

@@ -1,0 +1,113 @@
+.NavBar li {
+    display: inline;
+    
+}
+.NavBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.coreSection{
+    background-color: #a4c9ee;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+.boxes {
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tryButton {
+    border-radius: 30%;
+    background-color: white;
+    padding: 15px;
+}
+.sitting img {
+    width: 100%;
+}
+input[type=text] {
+    background-color: #80e0dd7b;
+   color: white;
+  }
+.createButton {
+    background-color: #80E0DD;
+}
+.createDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.inviteDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.sub {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.createImage img {
+    width: 100%;
+}
+.inviteImage img {
+    width: 100%;
+}
+.inviteButton {
+    background-color: #EF7F65;
+}
+.pricingImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.pricingHeader {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.download {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-image: url("./Images/Footer/FooterBoxes.png");
+    height: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainDiv {
+    
+}
+.coreSection{
+    background-color: #a4c9ee;
+    display: grid;
+    grid-template-columns: 1fr;
+ }
+ .NavBar li {
+    display: block;
+    
+}
+.NavBar {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.createDiv {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.pricingImages {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.download {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.downloadImg {
+    display: none;
+}
+
+
+  }
